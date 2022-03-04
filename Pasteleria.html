@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelvt</title>
+</head>
+
+<body>
+    <img src="/Html/Logo.png" alt="Logo pastelvt" width="300px">
+    <h1>Bienvenidos a Pastelvt</h1>
+
+    <h2>Estos son los diferentes pasteles con los que contamos.</h2>
+
+    <li>Sabores
+        <ul>
+            <li>Fresa</li>
+            <li>Vainilla</li>
+            <li>Chocolate</li>
+            <li>Limon</li>
+        </ul>
+    </li>
+
+    <img src="/Html/Sabores.png" alt="Logo pastelvt" width="300px">
+
+    <h3>Costo de los Pasteles</h3><br>
+    <dl>
+        <dt>Pastel de Fresa</dt>
+        <dd>250 Pesos</dd>
+        <dt>Pastel de Vainilla</dt>
+        <dd>300 Pesos</dd>
+        <dt>Pastel de Chocolate</dt>
+        <dd>200 Pesos</dd>
+        <dt>Pastel de Limon</dt>
+        <dd>230 Pesos</dd>
+    </dl>
+
+    <h3>Selecciona los sabores que deseas combinar</h3><br>
+    <input type="checkbox" id="topping1" name="topping1" value="Cebolla">
+    <label for="topping1">Vainilla</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Cilantro">
+    <label for="topping2">Fresa</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Salsa">
+    <label for="topping3">Chocolate</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Salsa">
+    <label for="topping3">Limon</label><br><br>
+
+    <p>Costo de 2 sabores.</p>
+    <p>350</p>
+    <p>Costo de 3 sabores.</p>
+    <p>380</p>
+    <p>Costo de 4 sabores.</p>
+    <p>400</p>
+
+    <h3>Costo extra por ingreso de algun adorno </h3>
+     <dl>
+         <dt>cake Acrilico personalizado</dt>
+         <dd>100 pesos</dd>
+         <dt>Imagen ilustrada</dt>
+         <dd>70 pesos</dd>
+     </dl> 
+     <img src="/Html/Adornos.png" alt="Adorno" width="200px">
+
+
+     <h2>Realizar Pedido</h2>
+
+     <form action="pedido.js">
+         <label for="Nombre">Ingresa tu nombre</label><br>
+         <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+
+         <br><br>
+
+         <label for="Telefono">Ingresa tu Telefono</label><br>
+         <input type="tel" id="Telefono" name="Telefono" placeholder="Telefono">
+
+         <br><br>
+
+         <label for="Email">Ingresa tu correo electronico</label><br>
+         <input type="text" id="Email" name="Email" placeholder="Email">
+
+         <label for="Descripcion">Descripcion del Pastel</label><br>
+         <input type="text" id="Descripcion" name="Descripcion" placeholder="Descripcion">
+
+         <p>Que sabores quieres agregar a tu pastel</p>
+         <select name="pastel" id="pastel">
+           <option value="Vainilla">Vainilla</option>
+           <option value="Fresa">Fresa</option>
+           <option value="Limon">Limon</option>
+           <option value="Chocolate">Chocolate</option>  
+         </select>
+
+         <p>Adornos extra en el pastel</p>
+         <select name="adorno" id="adorno">
+           <option value="Img">Imagen Ilustrada</option>
+           <option value="Acrilico">Cake Acrilico Personalizado</option>  
+         </select>
+
+     </form>
+
+        <br><br>
+         
+         <input type="reset"><br>
+         <input type="submit"><br>
+         <input type="button" id="boton1" name="boton1" value="Finalizar" onclick="alert('Gracias por su compra :) ');"><br><br>
+
+
+
+         <br>
+    
+         <p>Direccion</p>
+         <p>Fray Servando Teresa de Mier 45, Centro, Cuauhtémoc, 06080 Ciudad de México, CDMX</p><br>
+         <p>Telefono</p>
+         <p>5514123289</p><br>
+         <p>Horario de Atencion</p>
+         <p>Lunes 9 am a 10 pm</p>
+         <p>Martes 9 am a 10 pm</p>
+         <p>Miercoles 9 am a 10 pm</p>
+         <p>Jueves 9 am a 10 pm</p>
+         <p>Viernes 9 am a 10 pm</p>
+         <p>Sabado 1 pm a 10 pm</p>
+         <p>Domingo 1 pm a 10 pm</p>
+</body>
+
+
+
+</html>
